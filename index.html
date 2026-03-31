@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page oficial de Horizonte Vivo con servicios de asesoría, formación y soporte para emprendedores.">
+    <title>Horizonte Vivo | Impulsamos tu organización</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header class="site-header">  <!-- Encabezado principal que contiene el logo y título de la organización -->
+        <div class="container nav-wrapper">
+            <p class="brand" aria-label="Nombre de la organización">Horizonte Vivo</p>
+            <nav aria-label="Menú principal"> <!-- Menú de navegación principal con enlaces a las secciones del sitio -->
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#presentacion">Presentación</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido-principal"> <!-- Contenedor que envuelve todo el contenido principal de la Landing Page -->
+        <section id="presentacion"> <!-- Sección de presentación o hero con una breve descripción y banner -->
+            <div class="container hero" id="inicio">
+                <div class="hero-text">
+                    <h1>Organización Horizonte Vivo</h1>
+                    <h2>Presentación</h2>
+                    <p>
+                        Acompañamos a equipos y emprendedores a convertir ideas en proyectos sostenibles,
+                        con metodología clara, herramientas prácticas y un enfoque humano.
+                    </p>
+                    <a class="btn" href="#contacto">Solicitar asesoría</a>
+                </div>
+                <figure class="hero-banner">
+                    <img src="img/banner.svg" alt="Equipo colaborando en la planificación y crecimiento de una organización">
+                </figure>
+            </div>
+        </section>
+
+        <section id="servicios"> <!-- Sección principal que detalla los 3 servicios de la organización -->
+            <div class="container">
+                <h2>Servicios</h2>
+                <p class="section-intro">Ofrecemos soluciones concretas para fortalecer tu organización en cada etapa.</p>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Asesoría Estratégica</h3>
+                        <p>Diagnóstico de situación, definición de objetivos y plan de acción medible para tu proyecto.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Capacitación de Equipos</h3>
+                        <p>Talleres prácticos en liderazgo, comunicación y gestión para mejorar resultados y cultura interna.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Soporte Operativo</h3>
+                        <p>Acompañamiento mensual en procesos, seguimiento de avances y mejora continua.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container contact-wrap">
+                <div>
+                    <h2>Contacto</h2>
+                    <p>Cuéntanos brevemente tu necesidad y te responderemos dentro de 24 horas hábiles.</p>
+                </div>
+                <form class="contact-form" action="#" method="post"> <!-- Sección que contiene el formulario simple para que los usuarios se contacten -->
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input id="correo" name="correo" type="email" autocomplete="email" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"> <!-- Pie de página con información básica de contacto, autor y año -->
+        <div class="container footer-content">
+            <p>© 2026 Horizonte Vivo</p>
+            <p>Desarrollado por Carolina Rehbein</p>
+        </div>
+    </footer>
+</body>
+</html>
