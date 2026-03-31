@@ -196,27 +196,23 @@ section {
 	margin: 0.5rem 0 1.4rem;
 }
 
-.services-grid {
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.service-card {
+.service-card-bs {
 	background: var(--surface);
-	padding: 1.2rem;
 	border: 1px solid var(--line);
 	border-radius: 0.9rem;
 	box-shadow: 0 6px 16px rgba(16, 30, 38, 0.08);
 }
 
-.service-card h3 {
-	margin-top: 0;
+.service-card-bs .card-body {
+	padding: 1.2rem;
+}
+
+.service-card-bs .card-title {
 	margin-bottom: 0.4rem;
 	color: var(--brand-dark);
 }
 
-.service-card p {
+.service-card-bs .card-text {
 	margin: 0;
 	color: var(--muted);
 }
@@ -308,10 +304,6 @@ button:focus-visible {
 @media (max-width: 860px) {
 	.hero,
 	.contact-wrap {
-		grid-template-columns: 1fr;
-	}
-
-	.services-grid {
 		grid-template-columns: 1fr;
 	}
 
